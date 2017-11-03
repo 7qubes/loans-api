@@ -12,8 +12,8 @@ https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
 1. python virtualenv activation:
     source venv/bin/activate
 
-2. run api on http://127.0.0.1:8000:
-    pipenv run gunicorn app.main:app
+2. run api on http://127.0.0.1:8080:
+    pipenv run waitress-serve app.main:app
 </pre>
 
 ## Runing tests file
