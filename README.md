@@ -16,5 +16,5 @@ https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
     python app/setup.py
 
 3. run api on http://127.0.0.1:4000:
-    python app/main.py
+    pipenv run python main.py
 </pre>
