@@ -12,6 +12,6 @@ https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
 1. python virtualenv activation
     source venv/bin/activate
 
-2. run api on http://127.0.0.1:4000:
+2. run api on http://127.0.0.1:8080:
     pipenv run python main.py
 </pre>
