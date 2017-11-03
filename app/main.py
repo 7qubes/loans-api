@@ -46,11 +46,11 @@ errors = {
         'message': "Loan not found.",
     },
     'NotAllowedError': {
-        'message': '''
-            The method is not allowed for the requested URL.
-            Please follow the instructions at
-            https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
-        ''',
+        'message': (
+            "The method is not allowed for the requested URL. "
+            "Please follow the instructions at "
+            "https://documenter.getpostman.com/view/3076044/loans-api/77h6P84"
+        )
     },
 }
 
