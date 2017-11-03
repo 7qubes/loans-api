@@ -4,10 +4,10 @@ from flask_restful import Resource, Api, reqparse
 from flask_restful import HTTPException
 from sqlalchemy import create_engine
 
-from loan import Loan
-from payment import Payment
-from validators import valid
-from utils import Utils
+from .loan import Loan
+from .payment import Payment
+from .validators import valid
+from .utils import Utils
 
 
 # custom api validation errors
