@@ -27,6 +27,10 @@ class LoanNotFoundError(HTTPException):
     code = 400
 
 
+class NotAllowedError(HTTPException):
+    code = 400
+
+
 # custom error messages
 errors = {
     'InvalidDecimalError': {
@@ -40,6 +44,13 @@ errors = {
     },
     'LoanNotFoundError': {
         'message': "Loan not found.",
+    },
+    'NotAllowedError': {
+        'message': '''
+            The method is not allowed for the requested URL.
+            Please follow the instructions at
+            https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
+        ''',
     },
 }
 
@@ -78,6 +89,9 @@ api = Api(app, errors=errors)
 
 
 class LoansApi(Resource):
+
+    def get(self):
+        raise NotAllowedError
 
     def post(self):
         parser = reqparse.RequestParser(bundle_errors=True)

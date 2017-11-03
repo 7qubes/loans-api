@@ -7,7 +7,12 @@ Python 3, Flask-RESTful, SQLite 3, TDD
 ## Documentation:
 https://documenter.getpostman.com/view/3076044/loans-api/77h6P84
 
+## Deploy on Heroku:
+https://obscure-castle-95284.herokuapp.com/loans
+
 ## Getting Started:
+You can use above heroku deploy url following postman documentation or run the server in your own enviroment. To do that, follow the instructions bellow:
+
 <pre>
 1. python virtualenv activation:
     source venv/bin/activate
